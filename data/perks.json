@@ -1,0 +1,320 @@
+{
+  "perks": {
+    "body": {
+      "athletics": {
+        "regeneration": {
+          "name": "Regeneration",
+          "description": "Slowly regenerate HP during combat (2 HP per turn).",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "💚"
+        },
+        "pack_mule": {
+          "name": "Pack Mule",
+          "description": "Carry capacity increased by 20 items.",
+          "required_skill_level": 6,
+          "required_perk": null,
+          "emoji": "🎒"
+        },
+        "wolverine": {
+          "name": "Wolverine",
+          "description": "Regenerate 5 HP per turn after combat ends.",
+          "required_skill_level": 12,
+          "required_perk": "regeneration",
+          "emoji": "💚"
+        },
+        "epimorphic_skeleton": {
+          "name": "Epimorphic Skeleton",
+          "description": "Maximum HP increased by 60.",
+          "required_skill_level": 15,
+          "required_perk": "pack_mule",
+          "emoji": "🦴"
+        }
+      },
+      "annihilation": {
+        "heavy_lead": {
+          "name": "Heavy Lead",
+          "description": "Shotgun and LMG damage increased by 10%.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "💥"
+        },
+        "pump_it_louder": {
+          "name": "Pump it Louder!",
+          "description": "Shotguns can now knock back enemies, reducing their next attack by 20%.",
+          "required_skill_level": 8,
+          "required_perk": "heavy_lead",
+          "emoji": "💥"
+        },
+        "skeet_shooter": {
+          "name": "Skeet Shooter",
+          "description": "Shotgun critical hit chance increased by 5%.",
+          "required_skill_level": 10,
+          "required_perk": "heavy_lead",
+          "emoji": "🎯"
+        }
+      },
+      "street_brawler": {
+        "crushing_blows": {
+          "name": "Crushing Blows",
+          "description": "Blunt weapon attacks deal 15% more damage.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "👊"
+        },
+        "flurry": {
+          "name": "Flurry",
+          "description": "25% chance to attack twice with melee weapons.",
+          "required_skill_level": 8,
+          "required_perk": "crushing_blows",
+          "emoji": "👊"
+        },
+        "thrash": {
+          "name": "Thrash",
+          "description": "Each successful melee hit reduces enemy armor by 3 for the rest of combat.",
+          "required_skill_level": 12,
+          "required_perk": "flurry",
+          "emoji": "👊"
+        }
+      }
+    },
+    "reflexes": {
+      "assault": {
+        "eagle_eye": {
+          "name": "Eagle Eye",
+          "description": "Rifle accuracy increased. +5% crit chance with rifles.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "🦅"
+        },
+        "bullet_time": {
+          "name": "Bullet Time",
+          "description": "Killing an enemy with a rifle grants a free bonus attack.",
+          "required_skill_level": 10,
+          "required_perk": "eagle_eye",
+          "emoji": "⏱️"
+        },
+        "commando": {
+          "name": "Commando",
+          "description": "SMG and rifle damage increased by 15%.",
+          "required_skill_level": 7,
+          "required_perk": null,
+          "emoji": "🎖️"
+        }
+      },
+      "handguns": {
+        "gunslinger": {
+          "name": "Gunslinger",
+          "description": "Pistol and revolver critical damage increased by 20%.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "🔫"
+        },
+        "dead_center": {
+          "name": "Dead Center",
+          "description": "+10% pistol damage in the first round of combat.",
+          "required_skill_level": 7,
+          "required_perk": "gunslinger",
+          "emoji": "🎯"
+        },
+        "high_noon": {
+          "name": "High Noon",
+          "description": "Guaranteed critical hit on the first attack of each combat.",
+          "required_skill_level": 14,
+          "required_perk": "dead_center",
+          "emoji": "🌞"
+        }
+      },
+      "blades": {
+        "rooftop_fighter": {
+          "name": "Rooftop Fighter",
+          "description": "Blade weapons deal 10% more damage.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "⚔️"
+        },
+        "predator": {
+          "name": "Predator",
+          "description": "Blade critical hits cause bleeding (10 damage per turn for 2 turns).",
+          "required_skill_level": 8,
+          "required_perk": "rooftop_fighter",
+          "emoji": "🩸"
+        },
+        "death_blossom": {
+          "name": "Death Blossom",
+          "description": "Once per combat, attack all enemies simultaneously with blades.",
+          "required_skill_level": 16,
+          "required_perk": "predator",
+          "emoji": "🌸"
+        }
+      }
+    },
+    "tech": {
+      "crafting": {
+        "edgerunner_artisan": {
+          "name": "Edgerunner Artisan",
+          "description": "Crafted items have 10% better stats.",
+          "required_skill_level": 5,
+          "required_perk": null,
+          "emoji": "⚙️"
+        },
+        "workshop": {
+          "name": "Workshop",
+          "description": "Crafting costs 20% less materials.",
+          "required_skill_level": 8,
+          "required_perk": "edgerunner_artisan",
+          "emoji": "🔨"
+        },
+        "true_craftsman": {
+          "name": "True Craftsman",
+          "description": "Can craft Rare quality items.",
+          "required_skill_level": 12,
+          "required_perk": "workshop",
+          "emoji": "⚙️"
+        }
+      },
+      "engineering": {
+        "tesla": {
+          "name": "Tesla",
+          "description": "Tech weapon charged shots deal 15% more damage.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "⚡"
+        },
+        "bladerunner": {
+          "name": "Bladerunner",
+          "description": "Cyberware abilities deal 20% more damage.",
+          "required_skill_level": 8,
+          "required_perk": "tesla",
+          "emoji": "🦾"
+        }
+      }
+    },
+    "intelligence": {
+      "breach_protocol": {
+        "mass_vulnerability": {
+          "name": "Mass Vulnerability",
+          "description": "Breach Protocol reduces enemy armor by 15% for 3 turns.",
+          "required_skill_level": 5,
+          "required_perk": null,
+          "emoji": "💻"
+        },
+        "datamine_mastermind": {
+          "name": "Datamine Mastermind",
+          "description": "Earn 50% more eddies from hacking terminals and data shards.",
+          "required_skill_level": 9,
+          "required_perk": null,
+          "emoji": "💾"
+        },
+        "almost_in": {
+          "name": "Almost In!",
+          "description": "Breach Protocol applies two random debuffs instead of one.",
+          "required_skill_level": 12,
+          "required_perk": "mass_vulnerability",
+          "emoji": "💻"
+        }
+      },
+      "quickhacking": {
+        "signal_support": {
+          "name": "Signal Support",
+          "description": "RAM recovery increased by 1 per turn.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "📡"
+        },
+        "in_your_head": {
+          "name": "In Your Head",
+          "description": "Quickhack damage increased by 15%.",
+          "required_skill_level": 7,
+          "required_perk": "signal_support",
+          "emoji": "🧠"
+        },
+        "i_spy": {
+          "name": "I Spy",
+          "description": "Using Breach Protocol reveals the enemy's full stat profile.",
+          "required_skill_level": 6,
+          "required_perk": null,
+          "emoji": "🔍"
+        },
+        "hacker_overlord": {
+          "name": "Hacker Overlord",
+          "description": "Quickhacks have a 20% chance to chain to nearby enemies.",
+          "required_skill_level": 15,
+          "required_perk": "in_your_head",
+          "emoji": "🌐"
+        }
+      }
+    },
+    "cool": {
+      "cold_blood": {
+        "composure": {
+          "name": "Composure",
+          "description": "Armor increased by 5% while in combat.",
+          "required_skill_level": 4,
+          "required_perk": null,
+          "emoji": "🧊"
+        },
+        "coolagulant": {
+          "name": "Coolagulant",
+          "description": "Consumables heal 15% more HP.",
+          "required_skill_level": 7,
+          "required_perk": "composure",
+          "emoji": "💊"
+        },
+        "ice_in_your_veins": {
+          "name": "Ice in Your Veins",
+          "description": "Killing an enemy restores 15 HP.",
+          "required_skill_level": 12,
+          "required_perk": "composure",
+          "emoji": "🧊"
+        }
+      },
+      "stealth": {
+        "ghost": {
+          "name": "Ghost",
+          "description": "First attack from stealth deals 30% bonus damage.",
+          "required_skill_level": 5,
+          "required_perk": null,
+          "emoji": "👻"
+        },
+        "crouching_tiger": {
+          "name": "Crouching Tiger",
+          "description": "Dodge chance increased by 10%.",
+          "required_skill_level": 8,
+          "required_perk": "ghost",
+          "emoji": "🐯"
+        },
+        "silent_and_deadly": {
+          "name": "Silent and Deadly",
+          "description": "Stealth kills grant bonus XP and do not alert other enemies.",
+          "required_skill_level": 12,
+          "required_perk": "crouching_tiger",
+          "emoji": "🥷"
+        }
+      },
+      "ninjutsu": {
+        "return_to_sender": {
+          "name": "Return to Sender",
+          "description": "20% chance to reflect 25% of incoming damage back at the attacker.",
+          "required_skill_level": 6,
+          "required_perk": null,
+          "emoji": "🪃"
+        },
+        "assassin": {
+          "name": "Assassin",
+          "description": "Bonus damage against targets above 50% HP.",
+          "required_skill_level": 10,
+          "required_perk": "return_to_sender",
+          "emoji": "🗡️"
+        },
+        "sniper": {
+          "name": "Sniper",
+          "description": "Sniper rifle critical damage multiplier increased to 3x.",
+          "required_skill_level": 14,
+          "required_perk": "assassin",
+          "emoji": "🎯"
+        }
+      }
+    }
+  }
+}

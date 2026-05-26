@@ -1,0 +1,310 @@
+{
+  "missions": {
+    "gig_flatlined": {
+      "id": "gig_flatlined",
+      "name": "The Flatlined Fixer",
+      "type": "gig",
+      "giver": "Wakako Okada",
+      "location": "westbrook_japantown",
+      "required_level": 3,
+      "required_street_cred": 0,
+      "description": "Wakako needs a merc to recover a stolen Tyger Claws data shard from a scav den in Watson. Simple retrieval. Don't leave a mess.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "watson_kabuki", "text": "Travel to Kabuki, Watson."},
+        {"step": 1, "type": "combat", "target": "scavenger", "count": 3, "text": "Eliminate 3 scavengers guarding the stash."},
+        {"step": 2, "type": "collect", "item": "militech_data_shard", "text": "Collect the stolen data shard from the stash."},
+        {"step": 3, "type": "travel", "target": "westbrook_japantown", "text": "Return to Japantown and deliver the shard."}
+      ],
+      "rewards": {
+        "xp": 600,
+        "eddies": 2000,
+        "faction_rep": {"tyger_claws": 10},
+        "street_cred": 5
+      },
+      "failure_condition": null,
+      "story_text": {
+        "start": "You get a ping from Wakako Okada. Her voice is as flat as a Tyger Claw's expression. 'I have a job, merc. Someone stole property from my friends. I want it back. Don't ask questions.'",
+        "complete": "Wakako acknowledges receipt with a terse nod. 'Acceptable work. The eddies are in your account.' High praise from Wakako."
+      }
+    },
+    "gig_maelstrom_tech": {
+      "id": "gig_maelstrom_tech",
+      "name": "Machines of War",
+      "type": "gig",
+      "giver": "Rogue Amendiares",
+      "location": "westbrook_charter_hill",
+      "required_level": 6,
+      "required_street_cred": 5,
+      "description": "Rogue's got intel on a Maelstrom cache of military hardware in the NID. She wants it catalogued and photographed — without the Maelstrom knowing. Ghost in, ghost out.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "watson_nid", "text": "Infiltrate the NID."},
+        {"step": 1, "type": "combat_optional", "target": "maelstrom_ganger", "count": 2, "text": "Neutralize or avoid 2 Maelstrom guards."},
+        {"step": 2, "type": "interact", "target": "data_terminal", "text": "Access the Maelstrom weapons cache terminal."},
+        {"step": 3, "type": "travel", "target": "westbrook_charter_hill", "text": "Return to Rogue with the data."}
+      ],
+      "rewards": {
+        "xp": 900,
+        "eddies": 3500,
+        "faction_rep": {"maelstrom": -5},
+        "street_cred": 8,
+        "item": "copperhead"
+      },
+      "story_text": {
+        "start": "Rogue leans on the Afterlife bar and slides you a chip. 'I need a professional. Maelstrom's got military-grade hardware they shouldn't have. Find out where they got it. Don't get seen.'",
+        "complete": "Rogue takes the chip without looking at it. 'Not bad for a beginner.' She slides you a credit chip and walks away. You'll count that as a compliment."
+      }
+    },
+    "gig_valentinos_honor": {
+      "id": "gig_valentinos_honor",
+      "name": "Family Matters",
+      "type": "gig",
+      "giver": "El Padre",
+      "location": "heywood_glen",
+      "required_level": 8,
+      "required_street_cred": 8,
+      "description": "El Padre needs someone to resolve a 'family dispute' — a Valentinos member has gone rogue and is threatening to sell information to 6th Street. Bring him back. Alive, if possible.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "heywood_vista_del_rey", "text": "Track the rogue Valentinos to Vista del Rey."},
+        {"step": 1, "type": "combat", "target": "valentinos_soldier", "count": 2, "text": "Fight through his bodyguards."},
+        {"step": 2, "type": "choice", "options": ["capture", "eliminate"], "text": "Capture or eliminate the rogue Valentinos."},
+        {"step": 3, "type": "travel", "target": "heywood_glen", "text": "Return to El Padre with the outcome."}
+      ],
+      "rewards": {
+        "xp": 1200,
+        "eddies": 4500,
+        "faction_rep": {"valentinos": 20},
+        "street_cred": 10
+      },
+      "story_text": {
+        "start": "El Padre clasps your hand with both of his. 'This is a matter of family and honor. One of ours has forgotten both. I pray you don't have to do what I think you might.'",
+        "complete_capture": "El Padre nods gravely. 'You showed mercy. This family will remember that.' The eddies hit your account a minute later.",
+        "complete_eliminate": "El Padre is silent for a long moment. 'It is done. The family is protected.' A pause. 'The eddies are yours.'"
+      }
+    },
+    "gig_pacifica_run": {
+      "id": "gig_pacifica_run",
+      "name": "Ghost of Pacifica",
+      "type": "gig",
+      "giver": "Placide",
+      "location": "pacifica_coastview",
+      "required_level": 15,
+      "required_street_cred": 15,
+      "description": "Placide speaks to you through a proxy. The Voodoo Boys need someone to run a data extraction from a Militech outpost near Pacifica. They're testing you. Don't fail.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "pacifica_west_wind", "text": "Move into the Animals-controlled zone."},
+        {"step": 1, "type": "combat", "target": "animals_brawler", "count": 3, "text": "Fight through the Animals patrol."},
+        {"step": 2, "type": "travel", "target": "pacifica_coastview", "text": "Reach the Militech data terminal."},
+        {"step": 3, "type": "interact", "target": "militech_terminal", "text": "Extract the target data."},
+        {"step": 4, "type": "combat", "target": "militech_soldier", "count": 3, "text": "Fight off the Militech response team."},
+        {"step": 5, "type": "travel", "target": "pacifica_coastview", "text": "Deliver the data to Placide's proxy."}
+      ],
+      "rewards": {
+        "xp": 3000,
+        "eddies": 10000,
+        "faction_rep": {"voodoo_boys": 25},
+        "street_cred": 20,
+        "item": "problem_solver"
+      },
+      "story_text": {
+        "start": "The message appears directly in your visual feed. No sender ID. 'We've heard of you. Now we watch. Do not disappoint.' Attached: coordinates.",
+        "complete": "Placide's proxy collects the data with a nod. 'You move like a ghost. The Boys notice things like that.' The eddies arrive. More than you expected."
+      }
+    },
+    "side_job_silverhand_echo": {
+      "id": "side_job_silverhand_echo",
+      "name": "Echoes of the Past",
+      "type": "side_job",
+      "giver": "Johnny Silverhand (Echo)",
+      "location": "city_center_downtown",
+      "required_level": 10,
+      "required_street_cred": 10,
+      "description": "You start hearing fragments — a voice, a memory, something that doesn't feel like yours. It leads you to a rooftop in Downtown where Silverhand once performed a legendary gig. There's a message waiting for you in the ruins.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "city_center_downtown", "text": "Follow the memory fragment to Downtown."},
+        {"step": 1, "type": "interact", "target": "silverhand_guitar", "text": "Examine the remains of the '94 Arasaka gig."},
+        {"step": 2, "type": "combat", "target": "arasaka_soldier", "count": 2, "text": "Arasaka agents arrive to erase history. Fight them off."},
+        {"step": 3, "type": "interact", "target": "old_terminal", "text": "Decrypt the old Samurai concert archive."}
+      ],
+      "rewards": {
+        "xp": 2000,
+        "eddies": 5000,
+        "street_cred": 15,
+        "special": "samurai_playlist"
+      },
+      "story_text": {
+        "start": "The voice cuts through like static on an old radio. 'Hey. Yeah, I know you can hear me. Go to the roof at Konpeki. Left something there in '94. Before the bombs. Go.'",
+        "complete": "The archive loads. Music from another era. The voice is quieter now. 'They tried to delete everything. Can't delete the music. Can't delete what we stood for.' A pause. 'Or what we died for.'"
+      }
+    },
+    "side_job_aldecaldos_run": {
+      "id": "side_job_aldecaldos_run",
+      "name": "Born Free",
+      "type": "side_job",
+      "giver": "Panam Palmer",
+      "location": "badlands_nomad_camp",
+      "required_level": 14,
+      "required_street_cred": 12,
+      "description": "Panam needs backup for an Aldecaldos operation against Wraith raiders who've been hitting their supply convoys. It's personal for her. She needs someone who can handle both a gun and keeping their mouth shut.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "badlands_nomad_camp", "text": "Meet Panam at the Aldecaldos camp."},
+        {"step": 1, "type": "travel", "target": "badlands_wraith_territory", "text": "Move into Wraith territory."},
+        {"step": 2, "type": "combat", "target": "maelstrom_ganger", "count": 4, "text": "Take down the Wraith raider squad."},
+        {"step": 3, "type": "combat", "target": "maelstrom_boss", "count": 1, "text": "Confront the Wraith lieutenant."},
+        {"step": 4, "type": "travel", "target": "badlands_nomad_camp", "text": "Return to camp with Panam."}
+      ],
+      "rewards": {
+        "xp": 3500,
+        "eddies": 8000,
+        "faction_rep": {"aldecaldos": 30},
+        "street_cred": 18,
+        "item": "widow_maker"
+      },
+      "story_text": {
+        "start": "Panam doesn't look up when you approach. 'You're late.' She's cleaning a rifle. 'Wraiths hit another convoy. That's my family's food and meds in the dirt. So we're going to have a conversation with them.' She finally looks at you. 'You in?'",
+        "complete": "Panam doesn't say much on the way back. But somewhere outside the camp, she stops and looks at the Badlands sky. 'Thanks.' Just that. From Panam, that's practically a speech."
+      }
+    },
+    "main_the_heist": {
+      "id": "main_the_heist",
+      "name": "The Heist",
+      "type": "main_story",
+      "giver": "Dexter DeShawn",
+      "location": "watson_little_china",
+      "required_level": 8,
+      "required_street_cred": 0,
+      "description": "You've been tapped for the job of the decade — stealing the Relic chip from the most secure hotel in Night City. Konpeki Plaza. Arasaka's own backyard. Dex says it's a sure thing. Nothing in Night City ever is.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "watson_little_china", "text": "Meet Dex at the No-Tell Motel."},
+        {"step": 1, "type": "interact", "target": "mission_briefing", "text": "Review the Konpeki Plaza blueprints with Jackie."},
+        {"step": 2, "type": "travel", "target": "city_center_corporate_plaza", "text": "Infiltrate Konpeki Plaza."},
+        {"step": 3, "type": "interact", "target": "relic_chip", "text": "Acquire the Relic from Yorinobu's penthouse."},
+        {"step": 4, "type": "combat", "target": "arasaka_soldier", "count": 5, "text": "Fight your way out as Arasaka locks down the hotel."},
+        {"step": 5, "type": "travel", "target": "badlands_nomad_camp", "text": "Escape to the Badlands with Misty and Viktor."}
+      ],
+      "rewards": {
+        "xp": 8000,
+        "eddies": 15000,
+        "street_cred": 30,
+        "special": "relic_implanted",
+        "unlock_missions": ["main_ghost_town", "side_job_silverhand_echo"]
+      },
+      "story_text": {
+        "start": "Dex leans across the table. 'I'm going to tell you something, and I need you not to do anything stupid when I say it.' He slides a chip across. 'Biochip. Arasaka tech. Stolen by Yorinobu himself. Sitting in Konpeki Plaza right now. We get that chip, we're set for life.' He looks you dead in the eye. 'You in?'",
+        "complete": "You wake up in the Badlands. The sun is burning. And somewhere in the back of your head, something isn't right. Someone is talking. Someone who shouldn't exist."
+      }
+    },
+    "main_ghost_town": {
+      "id": "main_ghost_town",
+      "name": "Ghost Town",
+      "type": "main_story",
+      "giver": "Panam Palmer",
+      "location": "badlands_nomad_camp",
+      "required_level": 15,
+      "required_street_cred": 10,
+      "required_missions": ["main_the_heist"],
+      "description": "You need to find Evelyn Parker. The trail leads to Panam Palmer and her tense relationship with the Aldecaldos. And through the Badlands into Wraith territory — where Militech is also looking for something.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "badlands_nomad_camp", "text": "Find Panam at the Aldecaldos settlement."},
+        {"step": 1, "type": "interact", "target": "panam_conversation", "text": "Convince Panam to help you find Evelyn."},
+        {"step": 2, "type": "travel", "target": "badlands_wraith_territory", "text": "Head into Wraith territory to recover Panam's vehicle."},
+        {"step": 3, "type": "combat", "target": "maelstrom_ganger", "count": 5, "text": "Fight through the Wraith compound."},
+        {"step": 4, "type": "interact", "target": "wraith_leader", "text": "Confront the Wraith leader."},
+        {"step": 5, "type": "travel", "target": "badlands_nomad_camp", "text": "Return to the Aldecaldos with what you've found."}
+      ],
+      "rewards": {
+        "xp": 12000,
+        "eddies": 20000,
+        "street_cred": 40,
+        "faction_rep": {"aldecaldos": 20},
+        "unlock_missions": ["main_transmission", "side_job_aldecaldos_run"]
+      },
+      "story_text": {
+        "start": "The voice in your head won't stop. Johnny Silverhand, dead for fifty years, talking to you like an old friend. You need answers. The only thread you have leads to a woman named Evelyn Parker. And Evelyn leads to the Badlands.",
+        "complete": "Panam watches the Badlands as the sun sets. 'Don't know what's waiting for you in the city. But I know what you did for me today.' She starts walking back. 'Come on. We'll figure the rest out over a fire.'"
+      }
+    },
+    "main_transmission": {
+      "id": "main_transmission",
+      "name": "Transmission",
+      "type": "main_story",
+      "giver": "Judy Alvarez",
+      "location": "watson_kabuki",
+      "required_level": 20,
+      "required_street_cred": 15,
+      "required_missions": ["main_ghost_town"],
+      "description": "Judy needs your help reaching the Voodoo Boys — and the Voodoo Boys need a very specific kind of merch. It's going to require going deep into Pacifica and deeper into the Net.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "watson_kabuki", "text": "Meet Judy at her apartment."},
+        {"step": 1, "type": "travel", "target": "pacifica_west_wind", "text": "Travel to Pacifica."},
+        {"step": 2, "type": "combat", "target": "animals_brawler", "count": 4, "text": "Fight through the Animals' territory."},
+        {"step": 3, "type": "travel", "target": "pacifica_coastview", "text": "Reach the Voodoo Boys' base in Coastview."},
+        {"step": 4, "type": "interact", "target": "placide_meeting", "text": "Meet with Placide and the Voodoo Boys."},
+        {"step": 5, "type": "interact", "target": "net_dive", "text": "Jack into the Voodoo Boys' network and contact the AI beyond the Blackwall."}
+      ],
+      "rewards": {
+        "xp": 18000,
+        "eddies": 30000,
+        "street_cred": 55,
+        "unlock_missions": ["main_nocturne"]
+      },
+      "story_text": {
+        "start": "Judy is exhausted and scared. 'I know where Evelyn is. Or was. The Voodoo Boys were involved. I need to get in there, but I can't go alone. And you're the only person in this city I'm starting to trust.' She pauses. 'Which is terrifying.'",
+        "complete": "You surface from the net gasping. The AI was... vast. Ancient. Whatever it said to Johnny will change things. You can feel it. Judy catches your arm. 'You okay?' You're not sure how to answer that."
+      }
+    },
+    "main_nocturne": {
+      "id": "main_nocturne",
+      "name": "Nocturne OP55N1",
+      "type": "main_story",
+      "giver": "Johnny Silverhand",
+      "location": "city_center_downtown",
+      "required_level": 30,
+      "required_street_cred": 30,
+      "required_missions": ["main_transmission"],
+      "description": "The biochip is killing you. Johnny is more than a ghost in your head — he's becoming you. You have one last chance to decide who walks out of this alive. Choose your path.",
+      "objectives": [
+        {"step": 0, "type": "interact", "target": "rooftop_conversation", "text": "Have the final conversation with Johnny Silverhand."},
+        {"step": 1, "type": "choice", "options": ["arasaka_ending", "aldecaldos_ending", "solo_ending"], "text": "Choose your path forward."},
+        {"step": 2, "type": "travel", "target": "city_center_corporate_plaza", "text": "Enter the point of no return."},
+        {"step": 3, "type": "combat", "target": "arasaka_ninja", "count": 4, "text": "Fight through Arasaka's final defense."},
+        {"step": 4, "type": "combat", "target": "maxtac_officer", "count": 1, "text": "Face the final guardian."},
+        {"step": 5, "type": "interact", "target": "final_decision", "text": "Make the choice that defines you."}
+      ],
+      "rewards": {
+        "xp": 50000,
+        "eddies": 100000,
+        "street_cred": 100,
+        "title": "Legend of Night City",
+        "special": "story_complete"
+      },
+      "story_text": {
+        "start": "Johnny sits on the edge of the Misty's roof and lights a cigarette that isn't real. 'Time's up,' he says. 'For one of us.' He flicks the cigarette off the edge. 'So. What's it going to be?'",
+        "complete": "The city glitters below. Night City. It's taken everything from you. And somehow, against every odd, against every corp, every gang, every bullet — you're still here. Still breathing. The city wanted to own you. It doesn't. Nobody does."
+      }
+    },
+    "bounty_cyberpsycho_1": {
+      "id": "bounty_cyberpsycho_1",
+      "name": "Cyberpsycho Sighting: Lost Angels",
+      "type": "bounty",
+      "giver": "NCPD",
+      "location": "watson_kabuki",
+      "required_level": 15,
+      "required_street_cred": 10,
+      "description": "NCPD has marked a cyberpsycho for elimination or non-lethal pacification. Last seen in Kabuki. The bounty is the same either way — MaxTac doesn't have time to come down here personally.",
+      "objectives": [
+        {"step": 0, "type": "travel", "target": "watson_kabuki", "text": "Locate the cyberpsycho in Kabuki."},
+        {"step": 1, "type": "combat", "target": "cyberpsycho", "count": 1, "text": "Neutralize the cyberpsycho."}
+      ],
+      "rewards": {
+        "xp": 2500,
+        "eddies": 8000,
+        "faction_rep": {"ncpd": 15},
+        "street_cred": 12
+      },
+      "story_text": {
+        "start": "The NCPD bounty board pings you. Photo: a person. Stats: military-grade cyberware. Status: no longer a person. Location: three blocks away.",
+        "complete": "The NCPD arrives twenty minutes after it's over. An officer kicks the chrome on the ground and takes a photo. 'Nice work, merc. Don't call us, we'll call you.' The eddies arrive before they do."
+      }
+    }
+  }
+}

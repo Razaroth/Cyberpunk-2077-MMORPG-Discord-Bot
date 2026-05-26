@@ -1,0 +1,466 @@
+{
+  "weapons": {
+    "lexington": {
+      "name": "M-10AF Lexington",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "power",
+      "rarity": "common", "damage": 45, "damage_type": "physical",
+      "crit_chance": 5, "range": "medium",
+      "buy_price": 800, "sell_price": 280, "required_level": 1,
+      "skill": "handguns",
+      "description": "Standard Night City sidearm. Reliable, easy to maintain, and found in every third gutter.",
+      "icon": "🔫", "slot": "weapon"
+    },
+    "nue": {
+      "name": "Nue",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "power",
+      "rarity": "uncommon", "damage": 58, "damage_type": "physical",
+      "crit_chance": 7, "range": "medium",
+      "buy_price": 1800, "sell_price": 630, "required_level": 5,
+      "skill": "handguns",
+      "description": "Popular Militech compact. Preferred by NCPD officers and corpo security.",
+      "icon": "🔫", "slot": "weapon"
+    },
+    "malorian_3516": {
+      "name": "Malorian Arms 3516",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "power",
+      "rarity": "iconic", "damage": 145, "damage_type": "physical",
+      "crit_chance": 25, "range": "long",
+      "buy_price": 0, "sell_price": 50000, "required_level": 30,
+      "skill": "handguns",
+      "description": "Johnny Silverhand's legendary pistol. Crafted for him personally by Robert Valdez. There is no equal.",
+      "icon": "🔫", "slot": "weapon", "unique": true
+    },
+    "unity": {
+      "name": "Unity",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "power",
+      "rarity": "rare", "damage": 72, "damage_type": "physical",
+      "crit_chance": 9, "range": "medium",
+      "buy_price": 4200, "sell_price": 1470, "required_level": 12,
+      "skill": "handguns",
+      "description": "A well-balanced pistol with superb accuracy. Favored by mercs who value precision.",
+      "icon": "🔫", "slot": "weapon"
+    },
+    "ajax": {
+      "name": "Ajax",
+      "type": "weapon", "weapon_type": "rifle", "subtype": "power",
+      "rarity": "rare", "damage": 88, "damage_type": "physical",
+      "crit_chance": 8, "range": "long",
+      "buy_price": 5500, "sell_price": 1925, "required_level": 14,
+      "skill": "assault",
+      "description": "Militech assault rifle. Seen everywhere from corporate security to Maelstrom raids.",
+      "icon": "🪖", "slot": "weapon"
+    },
+    "copperhead": {
+      "name": "Copperhead",
+      "type": "weapon", "weapon_type": "rifle", "subtype": "power",
+      "rarity": "uncommon", "damage": 65, "damage_type": "physical",
+      "crit_chance": 6, "range": "long",
+      "buy_price": 2800, "sell_price": 980, "required_level": 8,
+      "skill": "assault",
+      "description": "Budget assault rifle. Gets the job done without emptying your wallet.",
+      "icon": "🪖", "slot": "weapon"
+    },
+    "widow_maker": {
+      "name": "Widow Maker",
+      "type": "weapon", "weapon_type": "rifle", "subtype": "power",
+      "rarity": "iconic", "damage": 165, "damage_type": "physical",
+      "crit_chance": 20, "range": "long",
+      "buy_price": 0, "sell_price": 42000, "required_level": 25,
+      "skill": "assault",
+      "description": "Panam Palmer's personal rifle. Modified for the Badlands. Hits like a freight train.",
+      "icon": "🪖", "slot": "weapon", "unique": true
+    },
+    "defender": {
+      "name": "Defender",
+      "type": "weapon", "weapon_type": "rifle", "subtype": "power",
+      "rarity": "epic", "damage": 110, "damage_type": "physical",
+      "crit_chance": 12, "range": "long",
+      "buy_price": 12000, "sell_price": 4200, "required_level": 20,
+      "skill": "assault",
+      "description": "High-caliber assault rifle. The weapon of choice for Militech special ops.",
+      "icon": "🪖", "slot": "weapon"
+    },
+    "db_2_satara": {
+      "name": "DB-2 Satara",
+      "type": "weapon", "weapon_type": "shotgun", "subtype": "power",
+      "rarity": "uncommon", "damage": 120, "damage_type": "physical",
+      "crit_chance": 4, "range": "short",
+      "buy_price": 2200, "sell_price": 770, "required_level": 6,
+      "skill": "annihilation",
+      "description": "Double-barrel shotgun. Loud, messy, and remarkably persuasive at close range.",
+      "icon": "💥", "slot": "weapon"
+    },
+    "carnage": {
+      "name": "Carnage",
+      "type": "weapon", "weapon_type": "shotgun", "subtype": "power",
+      "rarity": "rare", "damage": 155, "damage_type": "physical",
+      "crit_chance": 5, "range": "short",
+      "buy_price": 6000, "sell_price": 2100, "required_level": 15,
+      "skill": "annihilation",
+      "description": "Semi-auto combat shotgun. If it's in front of you, it won't be standing for long.",
+      "icon": "💥", "slot": "weapon"
+    },
+    "pozhar_x3": {
+      "name": "Pozhar X-3",
+      "type": "weapon", "weapon_type": "shotgun", "subtype": "tech",
+      "rarity": "epic", "damage": 200, "damage_type": "physical",
+      "crit_chance": 8, "range": "short",
+      "buy_price": 14000, "sell_price": 4900, "required_level": 22,
+      "skill": "annihilation",
+      "description": "Tech shotgun that charges its shot for devastating burst fire. Punches through cover.",
+      "icon": "💥", "slot": "weapon"
+    },
+    "problem_solver": {
+      "name": "Problem Solver",
+      "type": "weapon", "weapon_type": "smg", "subtype": "power",
+      "rarity": "iconic", "damage": 95, "damage_type": "physical",
+      "crit_chance": 15, "range": "short",
+      "buy_price": 0, "sell_price": 35000, "required_level": 20,
+      "skill": "assault",
+      "description": "Placide's personal SMG. Problems go in one end and solutions come out the other.",
+      "icon": "🔫", "slot": "weapon", "unique": true
+    },
+    "v10_budget": {
+      "name": "Omaha",
+      "type": "weapon", "weapon_type": "smg", "subtype": "power",
+      "rarity": "common", "damage": 38, "damage_type": "physical",
+      "crit_chance": 4, "range": "short",
+      "buy_price": 600, "sell_price": 210, "required_level": 1,
+      "skill": "assault",
+      "description": "The cheapest SMG eddies can buy. You get what you pay for.",
+      "icon": "🔫", "slot": "weapon"
+    },
+    "overwatch": {
+      "name": "Overwatch",
+      "type": "weapon", "weapon_type": "sniper", "subtype": "power",
+      "rarity": "iconic", "damage": 280, "damage_type": "physical",
+      "crit_chance": 30, "range": "very_long",
+      "buy_price": 0, "sell_price": 60000, "required_level": 28,
+      "skill": "assault",
+      "description": "Panam's sniper rifle, modified to work silently in the Badlands. Precision at extreme range.",
+      "icon": "🎯", "slot": "weapon", "unique": true
+    },
+    "ashura": {
+      "name": "Ashura",
+      "type": "weapon", "weapon_type": "sniper", "subtype": "power",
+      "rarity": "rare", "damage": 210, "damage_type": "physical",
+      "crit_chance": 22, "range": "very_long",
+      "buy_price": 8500, "sell_price": 2975, "required_level": 18,
+      "skill": "assault",
+      "description": "Anti-material sniper rifle. Used by Tyger Claws rooftop sentries.",
+      "icon": "🎯", "slot": "weapon"
+    },
+    "katana": {
+      "name": "Katana",
+      "type": "weapon", "weapon_type": "melee", "subtype": "blade",
+      "rarity": "uncommon", "damage": 75, "damage_type": "physical",
+      "crit_chance": 12, "range": "melee",
+      "buy_price": 3000, "sell_price": 1050, "required_level": 7,
+      "skill": "blades",
+      "description": "Sharp, fast, silent. The weapon of the Tyger Claws. Respect the blade.",
+      "icon": "⚔️", "slot": "weapon"
+    },
+    "satori": {
+      "name": "Satori",
+      "type": "weapon", "weapon_type": "melee", "subtype": "blade",
+      "rarity": "iconic", "damage": 160, "damage_type": "physical",
+      "crit_chance": 35, "range": "melee",
+      "buy_price": 0, "sell_price": 45000, "required_level": 22,
+      "skill": "blades",
+      "description": "An exquisite katana of legendary craftsmanship. Said to have been aboard the Arasaka shuttle.",
+      "icon": "⚔️", "slot": "weapon", "unique": true
+    },
+    "baseball_bat": {
+      "name": "Baseball Bat",
+      "type": "weapon", "weapon_type": "melee", "subtype": "blunt",
+      "rarity": "common", "damage": 50, "damage_type": "physical",
+      "crit_chance": 5, "range": "melee",
+      "buy_price": 400, "sell_price": 140, "required_level": 1,
+      "skill": "street_brawler",
+      "description": "Night City's most accessible melee weapon. No maintenance required.",
+      "icon": "🏏", "slot": "weapon"
+    },
+    "gorilla_arms_weapon": {
+      "name": "Gorilla Arms (Weapon Mode)",
+      "type": "weapon", "weapon_type": "melee", "subtype": "cyberware_weapon",
+      "rarity": "rare", "damage": 130, "damage_type": "physical",
+      "crit_chance": 8, "range": "melee",
+      "buy_price": 0, "sell_price": 0, "required_level": 10,
+      "skill": "street_brawler",
+      "description": "Your cyberware arms in combat mode. Devastating, chrome-plated fists.",
+      "icon": "🦾", "slot": "weapon", "cyberware_only": true
+    },
+    "mantis_blades_weapon": {
+      "name": "Mantis Blades (Deployed)",
+      "type": "weapon", "weapon_type": "melee", "subtype": "cyberware_weapon",
+      "rarity": "epic", "damage": 175, "damage_type": "physical",
+      "crit_chance": 20, "range": "melee",
+      "buy_price": 0, "sell_price": 0, "required_level": 15,
+      "skill": "blades",
+      "description": "Blades that fold out of your forearms. Elegant. Lethal.",
+      "icon": "🦾", "slot": "weapon", "cyberware_only": true
+    },
+    "monowire_weapon": {
+      "name": "Monowire (Active)",
+      "type": "weapon", "weapon_type": "melee", "subtype": "cyberware_weapon",
+      "rarity": "epic", "damage": 155, "damage_type": "electrical",
+      "crit_chance": 15, "range": "melee",
+      "buy_price": 0, "sell_price": 0, "required_level": 13,
+      "skill": "blades",
+      "description": "A monomolecular wire launched from your palm. Can slice through almost anything.",
+      "icon": "🦾", "slot": "weapon", "cyberware_only": true
+    },
+    "skippy": {
+      "name": "Skippy",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "smart",
+      "rarity": "iconic", "damage": 85, "damage_type": "physical",
+      "crit_chance": 18, "range": "long",
+      "buy_price": 0, "sell_price": 0, "required_level": 15,
+      "skill": "handguns",
+      "description": "An AI-integrated smart pistol with a chirpy personality. Claims to be non-lethal. Spoiler: it isn't.",
+      "icon": "🔫", "slot": "weapon", "unique": true
+    },
+    "comrade_hammer": {
+      "name": "Comrade's Hammer",
+      "type": "weapon", "weapon_type": "pistol", "subtype": "tech",
+      "rarity": "iconic", "damage": 3000, "damage_type": "physical",
+      "crit_chance": 5, "range": "medium",
+      "buy_price": 0, "sell_price": 55000, "required_level": 35,
+      "skill": "handguns",
+      "description": "A single-shot tech revolver that holds one round. One is all you need.",
+      "icon": "🔫", "slot": "weapon", "unique": true
+    }
+  },
+  "armor": {
+    "leather_jacket": {
+      "name": "Leather Jacket",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "common", "armor": 12, "dodge_bonus": 0,
+      "buy_price": 600, "sell_price": 210, "required_level": 1,
+      "description": "Classic Night City street wear. Offers minimal protection but maximum attitude.",
+      "icon": "🧥", "slot": "torso"
+    },
+    "reinforced_vest": {
+      "name": "Reinforced Vest",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "uncommon", "armor": 28, "dodge_bonus": 0,
+      "buy_price": 1800, "sell_price": 630, "required_level": 5,
+      "description": "A vest with trauma plates sewn in. Standard kit for Valentino soldiers.",
+      "icon": "🧥", "slot": "torso"
+    },
+    "militech_assault_armor": {
+      "name": "Militech Assault Armor",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "rare", "armor": 55, "dodge_bonus": -2,
+      "buy_price": 6500, "sell_price": 2275, "required_level": 15,
+      "description": "Military-grade body armor. Heavy, but when bullets start flying you'll be grateful.",
+      "icon": "🧥", "slot": "torso"
+    },
+    "arasaka_light_suit": {
+      "name": "Arasaka Light Suit",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "epic", "armor": 70, "dodge_bonus": 3,
+      "buy_price": 18000, "sell_price": 6300, "required_level": 25,
+      "description": "A suit-and-armor hybrid favored by Arasaka field agents. Looks corporate. Works corporate.",
+      "icon": "🧥", "slot": "torso"
+    },
+    "legendary_cybertech_jacket": {
+      "name": "CyberTech Combat Jacket",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "legendary", "armor": 95, "dodge_bonus": 5,
+      "buy_price": 50000, "sell_price": 17500, "required_level": 35,
+      "description": "Bleeding-edge smart-fabric with reactive armor plating. Adapts to incoming threats.",
+      "icon": "🧥", "slot": "torso"
+    },
+    "cap_basic": {
+      "name": "Street Cap",
+      "type": "armor", "armor_slot": "head",
+      "rarity": "common", "armor": 5, "dodge_bonus": 0,
+      "buy_price": 300, "sell_price": 105, "required_level": 1,
+      "description": "Basic head protection. Better than nothing. Barely.",
+      "icon": "🧢", "slot": "head"
+    },
+    "maelstrom_helm": {
+      "name": "Maelstrom Chrome Helm",
+      "type": "armor", "armor_slot": "head",
+      "rarity": "rare", "armor": 38, "dodge_bonus": 0,
+      "buy_price": 5000, "sell_price": 1750, "required_level": 12,
+      "description": "A chromed combat helmet scavenged from Maelstrom. Intimidating and practical.",
+      "icon": "🪖", "slot": "head"
+    },
+    "netrunner_headset": {
+      "name": "Netrunner Headset",
+      "type": "armor", "armor_slot": "head",
+      "rarity": "epic", "armor": 20, "dodge_bonus": 2, "intelligence_bonus": 3,
+      "buy_price": 22000, "sell_price": 7700, "required_level": 20,
+      "description": "A neural interface headset that boosts quickhacking speed. Light, functional, expensive.",
+      "icon": "🎧", "slot": "head"
+    },
+    "street_pants": {
+      "name": "Street Pants",
+      "type": "armor", "armor_slot": "legs",
+      "rarity": "common", "armor": 8, "dodge_bonus": 0,
+      "buy_price": 400, "sell_price": 140, "required_level": 1,
+      "description": "Reinforced cargo pants. More pockets than a corpo's briefcase.",
+      "icon": "👖", "slot": "legs"
+    },
+    "tactical_pants": {
+      "name": "Tactical Cargo Pants",
+      "type": "armor", "armor_slot": "legs",
+      "rarity": "uncommon", "armor": 22, "dodge_bonus": 1,
+      "buy_price": 1500, "sell_price": 525, "required_level": 6,
+      "description": "Military-grade leg armor in a deceptively casual package.",
+      "icon": "👖", "slot": "legs"
+    },
+    "gloves_basic": {
+      "name": "Combat Gloves",
+      "type": "armor", "armor_slot": "arms",
+      "rarity": "common", "armor": 6, "dodge_bonus": 0,
+      "buy_price": 350, "sell_price": 122, "required_level": 1,
+      "description": "Knuckle plating and wrist bracing. Basic but effective in a brawl.",
+      "icon": "🥊", "slot": "arms"
+    },
+    "subdermal_armor_item": {
+      "name": "Subdermal Armor Vest",
+      "type": "armor", "armor_slot": "torso",
+      "rarity": "legendary", "armor": 80, "dodge_bonus": 0,
+      "buy_price": 45000, "sell_price": 15750, "required_level": 30,
+      "description": "Armor plating grafted under the skin. You won't feel it until someone tries to shoot you.",
+      "icon": "🧥", "slot": "torso"
+    }
+  },
+  "consumables": {
+    "maxdoc_mk1": {
+      "name": "MaxDoc Mk.1",
+      "type": "consumable", "consumable_type": "heal",
+      "rarity": "common", "heal_amount": 40,
+      "buy_price": 120, "sell_price": 42, "required_level": 1,
+      "description": "A basic med inhaler. Gets the blood pressure up and the bleeding down.",
+      "icon": "💊", "stack_size": 10
+    },
+    "maxdoc_mk2": {
+      "name": "MaxDoc Mk.2",
+      "type": "consumable", "consumable_type": "heal",
+      "rarity": "uncommon", "heal_amount": 80,
+      "buy_price": 350, "sell_price": 122, "required_level": 8,
+      "description": "Upgraded field medicine. Seals most wounds in seconds.",
+      "icon": "💊", "stack_size": 10
+    },
+    "maxdoc_mk3": {
+      "name": "MaxDoc Mk.3",
+      "type": "consumable", "consumable_type": "heal",
+      "rarity": "rare", "heal_amount": 150,
+      "buy_price": 900, "sell_price": 315, "required_level": 18,
+      "description": "Military-grade medical inhaler. Used by Trauma Team first responders.",
+      "icon": "💊", "stack_size": 5
+    },
+    "bounceback_mk1": {
+      "name": "BounceBack Mk.1",
+      "type": "consumable", "consumable_type": "heal",
+      "rarity": "common", "heal_amount": 30,
+      "buy_price": 90, "sell_price": 31, "required_level": 1,
+      "description": "An injectable coagulant. Quick, cheap, gets you moving again.",
+      "icon": "💉", "stack_size": 10
+    },
+    "bounceback_mk3": {
+      "name": "BounceBack Mk.3",
+      "type": "consumable", "consumable_type": "heal",
+      "rarity": "rare", "heal_amount": 120,
+      "buy_price": 700, "sell_price": 245, "required_level": 15,
+      "description": "Serious trauma kit. Rebuilds tissue, rebalances biochem. Feels weird. Works great.",
+      "icon": "💉", "stack_size": 5
+    },
+    "alcohol": {
+      "name": "Alcohol",
+      "type": "consumable", "consumable_type": "buff",
+      "rarity": "common", "effect": "courage", "effect_value": 10,
+      "buy_price": 50, "sell_price": 17, "required_level": 1,
+      "description": "Liquid courage. +10 damage for 2 turns. Makes you brave. Not necessarily smart.",
+      "icon": "🍺", "stack_size": 20
+    },
+    "black_lace": {
+      "name": "Black Lace",
+      "type": "consumable", "consumable_type": "buff",
+      "rarity": "uncommon", "effect": "speed", "effect_value": 15,
+      "buy_price": 800, "sell_price": 280, "required_level": 10,
+      "description": "Military combat stimulant. Grants double attack for 2 turns. Dangerously addictive.",
+      "icon": "💊", "stack_size": 5
+    },
+    "militech_data_shard": {
+      "name": "Militech Data Shard",
+      "type": "consumable", "consumable_type": "quest",
+      "rarity": "rare",
+      "buy_price": 0, "sell_price": 2000, "required_level": 1,
+      "description": "Encrypted corporate data. Valuable to the right people.",
+      "icon": "💾", "stack_size": 1
+    },
+    "arasaka_access_card": {
+      "name": "Arasaka Access Card",
+      "type": "consumable", "consumable_type": "quest",
+      "rarity": "epic",
+      "buy_price": 0, "sell_price": 8000, "required_level": 1,
+      "description": "A high-clearance Arasaka keycard. Opens restricted zones.",
+      "icon": "🪪", "stack_size": 1
+    },
+    "oxy_booster": {
+      "name": "Oxy Booster",
+      "type": "consumable", "consumable_type": "buff",
+      "rarity": "uncommon", "effect": "defense", "effect_value": 20,
+      "buy_price": 600, "sell_price": 210, "required_level": 8,
+      "description": "Biomonitor-injected oxygen supplement. Reduces damage taken for 2 turns.",
+      "icon": "💨", "stack_size": 5
+    },
+    "scrap_metal": {
+      "name": "Scrap Metal",
+      "type": "material", "material_type": "crafting",
+      "rarity": "common",
+      "buy_price": 30, "sell_price": 10, "required_level": 1,
+      "description": "Salvaged metal plating. Used in crafting basic weapons and armor.",
+      "icon": "🔩", "stack_size": 50
+    },
+    "chemical_components": {
+      "name": "Chemical Components",
+      "type": "material", "material_type": "crafting",
+      "rarity": "uncommon",
+      "buy_price": 120, "sell_price": 42, "required_level": 1,
+      "description": "Solvents, polymers, and reactive agents used in advanced crafting.",
+      "icon": "🧪", "stack_size": 30
+    },
+    "optical_fiber": {
+      "name": "Optical Fiber",
+      "type": "material", "material_type": "crafting",
+      "rarity": "rare",
+      "buy_price": 500, "sell_price": 175, "required_level": 1,
+      "description": "High-quality fiber optic cable. Essential for crafting cyberware and netrunning tools.",
+      "icon": "🔮", "stack_size": 20
+    },
+    "epic_component": {
+      "name": "Epic Crafting Component",
+      "type": "material", "material_type": "crafting",
+      "rarity": "epic",
+      "buy_price": 2500, "sell_price": 875, "required_level": 1,
+      "description": "Advanced composite materials for high-tier crafting.",
+      "icon": "🔮", "stack_size": 10
+    }
+  },
+  "crafting_recipes": {
+    "craft_maxdoc_mk2": {
+      "name": "MaxDoc Mk.2",
+      "result_item": "maxdoc_mk2", "result_qty": 2,
+      "required_skill": "engineering", "required_skill_level": 5,
+      "materials": {"maxdoc_mk1": 3, "chemical_components": 1}
+    },
+    "craft_reinforced_vest": {
+      "name": "Reinforced Vest",
+      "result_item": "reinforced_vest", "result_qty": 1,
+      "required_skill": "crafting", "required_skill_level": 3,
+      "materials": {"scrap_metal": 5, "leather_jacket": 1}
+    },
+    "craft_ajax": {
+      "name": "Ajax Rifle",
+      "result_item": "ajax", "result_qty": 1,
+      "required_skill": "engineering", "required_skill_level": 10,
+      "materials": {"scrap_metal": 10, "chemical_components": 3, "optical_fiber": 2}
+    }
+  }
+}

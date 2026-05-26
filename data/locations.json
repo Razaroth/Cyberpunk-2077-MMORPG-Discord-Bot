@@ -1,0 +1,490 @@
+{
+  "districts": {
+    "watson": {
+      "name": "Watson",
+      "description": "Once a thriving commercial district, Watson fell on hard times after the DataKrash. Now it's a patchwork of immigrant communities, corporate ruins, and gang territory.",
+      "emoji": "🏙️",
+      "color": "cyan",
+      "danger_level": 2,
+      "recommended_level": 1,
+      "sub_locations": ["watson_kabuki", "watson_little_china", "watson_nid"]
+    },
+    "westbrook": {
+      "name": "Westbrook",
+      "description": "A district of contrasts — neon-lit Japantown next to the luxury towers of Charter Hill and the gated community of North Oak.",
+      "emoji": "🎌",
+      "color": "purple",
+      "danger_level": 3,
+      "recommended_level": 8,
+      "sub_locations": ["westbrook_japantown", "westbrook_charter_hill", "westbrook_north_oak"]
+    },
+    "city_center": {
+      "name": "City Center",
+      "description": "The beating heart of Night City. Corporate towers scrape the sky while corpo security patrols every corner. Power and money live here.",
+      "emoji": "🏢",
+      "color": "yellow",
+      "danger_level": 4,
+      "recommended_level": 15,
+      "sub_locations": ["city_center_downtown", "city_center_corporate_plaza"]
+    },
+    "heywood": {
+      "name": "Heywood",
+      "description": "A vast residential district split between the luxury of The Glen and the dangerous streets of Vista del Rey and Wellsprings. Valentinos country.",
+      "emoji": "🌆",
+      "color": "orange",
+      "danger_level": 3,
+      "recommended_level": 10,
+      "sub_locations": ["heywood_glen", "heywood_vista_del_rey", "heywood_wellsprings"]
+    },
+    "pacifica": {
+      "name": "Pacifica",
+      "description": "An abandoned resort district left to rot. The Animals and Voodoo Boys control its crumbling streets. Beautiful ruins, deadly inhabitants.",
+      "emoji": "🌊",
+      "color": "green",
+      "danger_level": 5,
+      "recommended_level": 20,
+      "sub_locations": ["pacifica_west_wind", "pacifica_coastview"]
+    },
+    "santo_domingo": {
+      "name": "Santo Domingo",
+      "description": "An industrial powerhouse running Night City's power grids and factories. 6th Street owns the streets between the smokestacks.",
+      "emoji": "🏭",
+      "color": "red",
+      "danger_level": 3,
+      "recommended_level": 12,
+      "sub_locations": ["santo_domingo_arroyo", "santo_domingo_rancho"]
+    },
+    "badlands": {
+      "name": "Badlands",
+      "description": "The vast wasteland surrounding Night City. Nomad clans, corporate testing grounds, and things left behind by the old world. Freedom and death in equal measure.",
+      "emoji": "🏜️",
+      "color": "gold",
+      "danger_level": 4,
+      "recommended_level": 18,
+      "sub_locations": ["badlands_nomad_camp", "badlands_solar_farm", "badlands_wraith_territory"]
+    }
+  },
+  "locations": {
+    "watson_kabuki": {
+      "name": "Kabuki — Watson",
+      "district": "watson",
+      "description": "A dense, neon-soaked neighborhood of Watson. Ripperdoc clinics line every other alley. The Moxes protect the workers here while Maelstrom lurks at the edges.",
+      "emoji": "💡",
+      "gangs": ["maelstrom", "moxes"],
+      "danger_level": 2,
+      "recommended_level": 1,
+      "shops": ["weapon_shop", "ripperdoc", "general_store", "black_market"],
+      "activities": ["explore", "hunt", "missions", "shop"],
+      "ambient": [
+        "Neon signs flicker overhead, advertising ripperdoc clinics and braindance parlors.",
+        "A group of Moxes walks past, eyeing you but not engaging.",
+        "Somewhere nearby, chrome scrapes against concrete.",
+        "The smell of synthetic food and motor oil fills the air.",
+        "A street preacher warns about the dangers of chrome addiction."
+      ],
+      "image_url": null
+    },
+    "watson_little_china": {
+      "name": "Little China — Watson",
+      "district": "watson",
+      "description": "The immigrant heart of Watson. Packed markets, cramped apartments, and Delamain cabs weaving through gridlocked traffic. Fixers hold court in the noodle bars.",
+      "emoji": "🏮",
+      "gangs": ["maelstrom"],
+      "danger_level": 2,
+      "recommended_level": 2,
+      "shops": ["weapon_shop", "general_store", "food_vendor"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "The air smells of noodle broth and ozone from passing hoverbikes.",
+        "Fixers huddle in booths, conducting business in hushed tones.",
+        "A Delamain cab pulls up. The AI driver greets you politely.",
+        "Street vendors hawk bootleg braindances and counterfeit chrome."
+      ]
+    },
+    "watson_nid": {
+      "name": "Northside Industrial District — Watson",
+      "district": "watson",
+      "description": "The industrial core of Watson, and Maelstrom's stronghold. Abandoned factories converted into chrome-worship temples. High danger, high reward.",
+      "emoji": "⚙️",
+      "gangs": ["maelstrom"],
+      "danger_level": 4,
+      "recommended_level": 5,
+      "shops": ["black_market"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "Industrial machinery groans in the darkness.",
+        "Maelstrom gang signs are welded to every surface.",
+        "The smell of chemicals and blood hangs in the air.",
+        "Chrome-plated eyes watch you from the shadows."
+      ]
+    },
+    "westbrook_japantown": {
+      "name": "Japantown — Westbrook",
+      "district": "westbrook",
+      "description": "A glittering slice of Night City controlled by the Tyger Claws. Holographic koi fish swim between skyscrapers. Beautiful on the surface. Lethal underneath.",
+      "emoji": "🌸",
+      "gangs": ["tyger_claws"],
+      "danger_level": 3,
+      "recommended_level": 8,
+      "shops": ["weapon_shop", "ripperdoc", "luxury_vendor", "black_market"],
+      "activities": ["explore", "hunt", "missions", "shop"],
+      "ambient": [
+        "Holographic cherry blossoms drift through the air.",
+        "The thump of music spills from a braindance club.",
+        "A Tyger Claw swordsman polishes their blade by a noodle cart.",
+        "Corporate salarymen and street mercs share the same sidewalk.",
+        "The Tyger Claws' neon tiger logo burns above every major entrance."
+      ]
+    },
+    "westbrook_charter_hill": {
+      "name": "Charter Hill — Westbrook",
+      "district": "westbrook",
+      "description": "A luxury residential district for Night City's wealthy. Corpo execs, fixers, and mid-level management all live here behind private security and biometric gates.",
+      "emoji": "💎",
+      "gangs": [],
+      "danger_level": 2,
+      "recommended_level": 10,
+      "shops": ["luxury_vendor", "ripperdoc"],
+      "activities": ["explore", "missions"],
+      "ambient": [
+        "Automated cleaning drones patrol the immaculate streets.",
+        "A corpo glares at you from behind a biometric gate.",
+        "The security cameras track your every move.",
+        "This part of Night City pretends the rest doesn't exist."
+      ]
+    },
+    "westbrook_north_oak": {
+      "name": "North Oak — Westbrook",
+      "district": "westbrook",
+      "description": "The wealthiest neighborhood in Night City. Gates within gates. The ultra-rich hide here from the chaos of the city below them.",
+      "emoji": "🏰",
+      "gangs": [],
+      "danger_level": 1,
+      "recommended_level": 15,
+      "shops": ["luxury_vendor"],
+      "activities": ["missions"],
+      "ambient": [
+        "Private security patrols outnumber the residents three-to-one.",
+        "The noise of Night City is almost inaudible here.",
+        "Manicured gardens and private pools dot the hillside."
+      ]
+    },
+    "city_center_downtown": {
+      "name": "Downtown — City Center",
+      "district": "city_center",
+      "description": "The commercial core of Night City. Megascreens blast advertisements a hundred meters high. Corpo security and NCPD compete to keep the streets 'safe'.",
+      "emoji": "🌃",
+      "gangs": ["ncpd"],
+      "danger_level": 3,
+      "recommended_level": 15,
+      "shops": ["weapon_shop", "general_store", "luxury_vendor", "ripperdoc"],
+      "activities": ["explore", "missions", "shop"],
+      "ambient": [
+        "Advertisements scream at you from every surface.",
+        "NCPD cruisers circle overhead in steady, predatory loops.",
+        "The crowd is a blur of corpo suits and desperate faces.",
+        "A holographic Trauma Team advertisement reminds you to subscribe.",
+        "Someone is running. NCPD is chasing. Nobody looks up."
+      ]
+    },
+    "city_center_corporate_plaza": {
+      "name": "Corporate Plaza — City Center",
+      "district": "city_center",
+      "description": "The absolute heart of corporate power in Night City. Arasaka Tower dominates the skyline. This is where the real Night City runs — cold, calculating, and lethal.",
+      "emoji": "🏦",
+      "gangs": ["arasaka", "militech", "ncpd"],
+      "danger_level": 5,
+      "recommended_level": 20,
+      "shops": ["black_market"],
+      "activities": ["explore", "missions"],
+      "ambient": [
+        "The shadow of Arasaka Tower falls over everything here.",
+        "Militech and Arasaka security personnel eye each other with barely concealed hostility.",
+        "Corpo executives move in tight formations surrounded by armed escorts.",
+        "Even the air feels surveilled here."
+      ]
+    },
+    "heywood_glen": {
+      "name": "The Glen — Heywood",
+      "district": "heywood",
+      "description": "The upmarket residential heart of Heywood. Clean streets, community murals, and Valentinos keeping a watchful eye on everything. More civilized — but still Night City.",
+      "emoji": "🏘️",
+      "gangs": ["valentinos"],
+      "danger_level": 2,
+      "recommended_level": 10,
+      "shops": ["weapon_shop", "general_store", "ripperdoc"],
+      "activities": ["explore", "hunt", "missions", "shop"],
+      "ambient": [
+        "Valentinos murals cover every blank wall.",
+        "Kids play in the street, watched by gang sentries who are also watching you.",
+        "The smell of food from a nearby restaurant makes your stomach growl.",
+        "A local fixer waves you over from a corner booth."
+      ]
+    },
+    "heywood_vista_del_rey": {
+      "name": "Vista del Rey — Heywood",
+      "district": "heywood",
+      "description": "Where Heywood gets rough. Valentinos and 6th Street battle for influence while residents keep their heads down. The border between organized crime and chaos.",
+      "emoji": "🌵",
+      "gangs": ["valentinos", "6th_street"],
+      "danger_level": 3,
+      "recommended_level": 12,
+      "shops": ["weapon_shop", "black_market"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "Gang tags overlap in territorial dispute on every wall.",
+        "The distant sound of gunfire echoes off the apartment blocks.",
+        "A 6th Street patrol rounds a corner. Valentinos scatter.",
+        "Someone was shot here recently. The blood hasn't been cleaned up."
+      ]
+    },
+    "heywood_wellsprings": {
+      "name": "Wellsprings — Heywood",
+      "district": "heywood",
+      "description": "The southern edge of Heywood. Working class and proud of it. 6th Street has strong roots here among the factory workers and veterans.",
+      "emoji": "⛽",
+      "gangs": ["6th_street"],
+      "danger_level": 3,
+      "recommended_level": 11,
+      "shops": ["weapon_shop", "general_store"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "6th Street banners hang from fire escapes.",
+        "The factory sirens mark the shift changes.",
+        "Veterans sit outside a bar, arguing about who started which war."
+      ]
+    },
+    "pacifica_west_wind": {
+      "name": "West Wind Estate — Pacifica",
+      "district": "pacifica",
+      "description": "A half-finished mega-resort that became a fortress for the Animals gang. Crumbling luxury hotel towers now serve as gang barracks and fighting arenas.",
+      "emoji": "🏚️",
+      "gangs": ["animals"],
+      "danger_level": 5,
+      "recommended_level": 20,
+      "shops": ["black_market"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "Drum and bass music thumps from a makeshift arena above.",
+        "Animals gang members train in the ruins of a former hotel lobby.",
+        "The smell of synthetic protein and sweat fills the air.",
+        "The resort pool is now a combat training pit."
+      ]
+    },
+    "pacifica_coastview": {
+      "name": "Coastview — Pacifica",
+      "district": "pacifica",
+      "description": "The waterfront of Pacifica. The Voodoo Boys have made this their digital sanctuary, hidden among crumbling seafront towers and old Haiti community enclaves.",
+      "emoji": "🌊",
+      "gangs": ["voodoo_boys"],
+      "danger_level": 5,
+      "recommended_level": 22,
+      "shops": ["black_market", "ripperdoc"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "The ocean wind carries static and whispers from deeper in the net.",
+        "Voodoo Boys move silently through the alleys, their eyes focused on nothing you can see.",
+        "Ritual symbols are painted on the walls in something that isn't paint.",
+        "The Blackwall feels closer here."
+      ]
+    },
+    "santo_domingo_arroyo": {
+      "name": "Arroyo — Santo Domingo",
+      "district": "santo_domingo",
+      "description": "The factory heart of Night City. Power plants and manufacturing facilities run 24/7. 6th Street keeps the workers in line and the competition out.",
+      "emoji": "🏭",
+      "gangs": ["6th_street"],
+      "danger_level": 3,
+      "recommended_level": 12,
+      "shops": ["general_store", "weapon_shop"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "The hum of massive power generators vibrates through the ground.",
+        "Smoke and chemical haze limits visibility to a few meters.",
+        "6th Street patrols march in tight military formations.",
+        "Factory shift workers trudge past, too tired to care about anything."
+      ]
+    },
+    "santo_domingo_rancho": {
+      "name": "Rancho Coronado — Santo Domingo",
+      "district": "santo_domingo",
+      "description": "A sprawling residential area for Santo Domingo's working class. Families in modest apartments, local fixers, and 6th Street watching from every corner.",
+      "emoji": "🏡",
+      "gangs": ["6th_street"],
+      "danger_level": 2,
+      "recommended_level": 10,
+      "shops": ["general_store", "ripperdoc"],
+      "activities": ["explore", "hunt", "missions", "shop"],
+      "ambient": [
+        "Children play between cars while parents shout warnings about staying close.",
+        "A local 6th Street member acts as an unofficial neighborhood watch.",
+        "The air smells of cooking food and exhaust from the nearby highway."
+      ]
+    },
+    "badlands_nomad_camp": {
+      "name": "Nomad Camp — Badlands",
+      "district": "badlands",
+      "description": "An Aldecaldos nomad settlement in the Badlands. Battered vehicles form a defensive perimeter around cook fires and makeshift workshops. Family, freedom, and fire.",
+      "emoji": "🔥",
+      "gangs": ["aldecaldos"],
+      "danger_level": 2,
+      "recommended_level": 1,
+      "shops": ["general_store", "vehicle_shop"],
+      "activities": ["explore", "missions", "shop"],
+      "ambient": [
+        "The crackle of a campfire and the smell of real food.",
+        "Nomads work on their vehicles, swapping stories and tools.",
+        "Panam Palmer nods at you from across the camp.",
+        "A child runs past chasing a dusty dog.",
+        "The stars over the Badlands are impossibly bright and clear."
+      ]
+    },
+    "badlands_solar_farm": {
+      "name": "Solar Farm — Badlands",
+      "district": "badlands",
+      "description": "Militech's massive solar energy installation, sprawling across the Badlands. Worth a fortune in data and corporate secrets — if you can fight through the security.",
+      "emoji": "☀️",
+      "gangs": ["militech"],
+      "danger_level": 4,
+      "recommended_level": 18,
+      "shops": [],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "Solar panels stretch to the horizon in every direction.",
+        "Militech security drones buzz overhead in systematic patrol patterns.",
+        "The heat is blistering. Your chrome radiates it back at you.",
+        "An automated turret tracks your movement, waiting for a clear shot."
+      ]
+    },
+    "badlands_wraith_territory": {
+      "name": "Wraith Territory — Badlands",
+      "district": "badlands",
+      "description": "The territory of the Wraiths, a rival nomad clan who turned to raiding and worse. Their fortified camps are scattered across the deep Badlands.",
+      "emoji": "💀",
+      "gangs": ["wraiths"],
+      "danger_level": 5,
+      "recommended_level": 25,
+      "shops": ["black_market"],
+      "activities": ["explore", "hunt", "missions"],
+      "ambient": [
+        "Wrecked vehicles mark the Wraiths' killing grounds.",
+        "Raider lookouts scan the horizon from rusted watchtowers.",
+        "The Badlands wind carries the smell of burning fuel.",
+        "This is as far from Night City as you can get. And just as dangerous."
+      ]
+    }
+  },
+  "shop_inventories": {
+    "weapon_shop": {
+      "name": "Weapon Shop",
+      "emoji": "🔫",
+      "items": ["lexington", "nue", "copperhead", "db_2_satara", "v10_budget", "katana", "baseball_bat"]
+    },
+    "ripperdoc": {
+      "name": "Ripperdoc",
+      "emoji": "🩺",
+      "description": "Installs cyberware. See /ripperdoc for available implants.",
+      "items": ["maxdoc_mk2", "maxdoc_mk3", "bounceback_mk3"]
+    },
+    "general_store": {
+      "name": "General Store",
+      "emoji": "🏪",
+      "items": ["maxdoc_mk1", "bounceback_mk1", "alcohol", "scrap_metal", "chemical_components", "street_pants", "gloves_basic"]
+    },
+    "luxury_vendor": {
+      "name": "Luxury Vendor",
+      "emoji": "💎",
+      "items": ["ajax", "unity", "militech_assault_armor", "arasaka_light_suit", "netrunner_headset", "maxdoc_mk3"]
+    },
+    "black_market": {
+      "name": "Black Market",
+      "emoji": "🕶️",
+      "description": "Requires at least 10 Street Cred to access.",
+      "min_street_cred": 10,
+      "items": ["defender", "carnage", "ashura", "black_lace", "oxy_booster", "epic_component", "optical_fiber"]
+    },
+    "vehicle_shop": {
+      "name": "Vehicle Parts",
+      "emoji": "🚗",
+      "items": ["scrap_metal", "chemical_components"]
+    }
+  },
+  "random_events": {
+    "common": [
+      {
+        "id": "scav_ambush",
+        "name": "Scavenger Ambush",
+        "description": "A group of scavengers corners you in an alley!",
+        "type": "combat",
+        "enemy": "scavenger",
+        "enemy_count": [1, 3]
+      },
+      {
+        "id": "found_loot",
+        "name": "Discovered Stash",
+        "description": "You find a hidden stash of eddies and supplies!",
+        "type": "loot",
+        "eddies_range": [50, 300],
+        "item_chance": 0.4
+      },
+      {
+        "id": "corpo_checkpoint",
+        "name": "Corporate Checkpoint",
+        "description": "Militech security blocks the road and demands ID.",
+        "type": "social",
+        "outcomes": {
+          "pass": {"cool_check": 8, "reward_xp": 50},
+          "fail": {"combat": "militech_soldier"}
+        }
+      },
+      {
+        "id": "injured_civilian",
+        "name": "Injured Civilian",
+        "description": "You find an injured civilian. Help them?",
+        "type": "choice",
+        "outcomes": {
+          "help": {"cost_item": "maxdoc_mk1", "reward_xp": 100, "faction_rep": {"moxes": 5}},
+          "ignore": {"reward_xp": 0}
+        }
+      },
+      {
+        "id": "gang_war",
+        "name": "Gang Skirmish",
+        "description": "You stumble into an active firefight between two gangs!",
+        "type": "choice",
+        "outcomes": {
+          "join_side_a": {"combat": "random_gang_b", "reward_xp": 150},
+          "sneak_past": {"cool_check": 10, "reward_xp": 80},
+          "run": {"reward_xp": 20}
+        }
+      }
+    ],
+    "rare": [
+      {
+        "id": "fixer_contact",
+        "name": "Fixer Contact",
+        "description": "A local fixer approaches you with an off-the-books job.",
+        "type": "mission_unlock",
+        "mission_pool": "gigs"
+      },
+      {
+        "id": "cyberpsycho_sighting",
+        "name": "Cyberpsycho!",
+        "description": "A cyberpsycho is rampaging nearby! Fight for a massive bounty.",
+        "type": "combat",
+        "enemy": "cyberpsycho",
+        "min_level": 15,
+        "bonus_reward": 2000
+      },
+      {
+        "id": "rogue_ai",
+        "name": "Rogue AI Drone",
+        "description": "A rogue Militech drone has gone haywire and is targeting civilians!",
+        "type": "combat",
+        "enemy": "rogue_ai_drone",
+        "min_level": 18,
+        "bonus_reward": 3000
+      }
+    ]
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "enemies": {
+    "maelstrom_ganger": {
+      "name": "Maelstrom Ganger",
+      "faction": "maelstrom", "level_range": [1, 8],
+      "base_hp": 80, "base_damage": 30, "base_armor": 8,
+      "xp_reward": 60, "eddie_range": [50, 150],
+      "loot_table": [
+        {"item": "lexington", "chance": 0.15},
+        {"item": "scrap_metal", "chance": 0.50},
+        {"item": "maxdoc_mk1", "chance": 0.30},
+        {"item": "alcohol", "chance": 0.20}
+      ],
+      "skills": ["berserk_charge"],
+      "description": "A heavily chromed gang soldier. Body bristling with cheap implants, eyes replaced with glowing red optics.",
+      "emoji": "⚙️",
+      "dialogue": ["You shouldn't have come here, merc.", "Maelstrom owns these streets!", "Chrome and pain — that's all you'll know!"]
+    },
+    "maelstrom_chromer": {
+      "name": "Maelstrom Chromer",
+      "faction": "maelstrom", "level_range": [5, 15],
+      "base_hp": 150, "base_damage": 55, "base_armor": 20,
+      "xp_reward": 130, "eddie_range": [100, 300],
+      "loot_table": [
+        {"item": "ajax", "chance": 0.10},
+        {"item": "reinforced_vest", "chance": 0.12},
+        {"item": "scrap_metal", "chance": 0.60},
+        {"item": "optical_fiber", "chance": 0.15}
+      ],
+      "skills": ["steel_shell", "frenzy"],
+      "description": "An upper-rank Maelstrom soldier with extensive military-grade chrome. Half machine, all dangerous.",
+      "emoji": "⚙️",
+      "dialogue": ["The flesh is weak. Chrome is eternal.", "I can barely feel pain anymore. Can you say the same?"]
+    },
+    "maelstrom_boss": {
+      "name": "Royce",
+      "faction": "maelstrom", "level_range": [12, 18],
+      "base_hp": 400, "base_damage": 80, "base_armor": 35,
+      "xp_reward": 500, "eddie_range": [800, 1500],
+      "loot_table": [
+        {"item": "defender", "chance": 0.35},
+        {"item": "militech_assault_armor", "chance": 0.25},
+        {"item": "epic_component", "chance": 0.20}
+      ],
+      "skills": ["steel_shell", "frenzy", "grenade_toss"],
+      "description": "Leader of the Maelstrom gang. Paranoid, brutal, and wired to the teeth with combat chrome.",
+      "emoji": "⚙️", "is_boss": true,
+      "dialogue": ["You think you can buy your way through me?", "I'm gonna paint these floors with you."]
+    },
+    "tyger_claws_soldier": {
+      "name": "Tyger Claw Soldier",
+      "faction": "tyger_claws", "level_range": [3, 10],
+      "base_hp": 90, "base_damage": 40, "base_armor": 10,
+      "xp_reward": 75, "eddie_range": [60, 180],
+      "loot_table": [
+        {"item": "katana", "chance": 0.18},
+        {"item": "leather_jacket", "chance": 0.25},
+        {"item": "maxdoc_mk1", "chance": 0.35}
+      ],
+      "skills": ["swift_slash"],
+      "description": "A neon-tattooed Tyger Claw enforcer. Fast on their feet and faster with a blade.",
+      "emoji": "🐯",
+      "dialogue": ["Japantown belongs to us, gaijin.", "You made a big mistake coming here."]
+    },
+    "tyger_claws_netrunner": {
+      "name": "Tyger Claw Netrunner",
+      "faction": "tyger_claws", "level_range": [8, 18],
+      "base_hp": 100, "base_damage": 65, "base_armor": 12,
+      "xp_reward": 160, "eddie_range": [200, 500],
+      "loot_table": [
+        {"item": "optical_fiber", "chance": 0.40},
+        {"item": "netrunner_headset", "chance": 0.08},
+        {"item": "chemical_components", "chance": 0.30}
+      ],
+      "skills": ["short_circuit", "contagion"],
+      "description": "A Tyger Claw hacker. Uses their neural link to fry your cyberware from across the room.",
+      "emoji": "🐯",
+      "dialogue": ["Your chrome is now mine to play with.", "Uploading pain directly to your nervous system."]
+    },
+    "valentinos_soldier": {
+      "name": "Valentinos Gang Member",
+      "faction": "valentinos", "level_range": [4, 12],
+      "base_hp": 100, "base_damage": 45, "base_armor": 12,
+      "xp_reward": 85, "eddie_range": [70, 200],
+      "loot_table": [
+        {"item": "db_2_satara", "chance": 0.14},
+        {"item": "reinforced_vest", "chance": 0.18},
+        {"item": "alcohol", "chance": 0.40}
+      ],
+      "skills": ["explosive_round"],
+      "description": "A Valentinos soldier draped in gold. They fight for family, honor, and Heywood.",
+      "emoji": "❤️",
+      "dialogue": ["Este es territorio Valentinos, pendejo.", "You disrespect us? You disrespect El Santo."]
+    },
+    "6th_street_soldier": {
+      "name": "6th Street Trooper",
+      "faction": "6th_street", "level_range": [5, 14],
+      "base_hp": 115, "base_damage": 50, "base_armor": 18,
+      "xp_reward": 95, "eddie_range": [80, 220],
+      "loot_table": [
+        {"item": "copperhead", "chance": 0.16},
+        {"item": "reinforced_vest", "chance": 0.20},
+        {"item": "scrap_metal", "chance": 0.45}
+      ],
+      "skills": ["suppressive_fire"],
+      "description": "A 6th Street soldier in military surplus. They think they're patriots defending the city.",
+      "emoji": "🦅",
+      "dialogue": ["Stand down, civilian.", "This is our turf. Back off or eat lead."]
+    },
+    "animals_brawler": {
+      "name": "Animals Brawler",
+      "faction": "animals", "level_range": [6, 15],
+      "base_hp": 180, "base_damage": 70, "base_armor": 5,
+      "xp_reward": 120, "eddie_range": [90, 250],
+      "loot_table": [
+        {"item": "baseball_bat", "chance": 0.30},
+        {"item": "bounceback_mk1", "chance": 0.40},
+        {"item": "chemical_components", "chance": 0.20}
+      ],
+      "skills": ["rage_strike", "iron_skin"],
+      "description": "A massive Animals fighter, body built on stims and protein slurry. No chrome — just muscle.",
+      "emoji": "🦍",
+      "dialogue": ["Chrome is for weaklings!", "Try hitting me. I dare you."]
+    },
+    "voodoo_boys_netrunner": {
+      "name": "Voodoo Boys Hacker",
+      "faction": "voodoo_boys", "level_range": [10, 20],
+      "base_hp": 110, "base_damage": 85, "base_armor": 10,
+      "xp_reward": 200, "eddie_range": [300, 700],
+      "loot_table": [
+        {"item": "optical_fiber", "chance": 0.50},
+        {"item": "netrunner_headset", "chance": 0.12},
+        {"item": "epic_component", "chance": 0.08}
+      ],
+      "skills": ["short_circuit", "contagion", "system_collapse"],
+      "description": "A Voodoo Boys netrunner. Speaks little, kills remotely. Their mind is already behind the Blackwall.",
+      "emoji": "💀",
+      "dialogue": ["You won't even see the daemon I'm uploading.", "The net is darker than you know, cher."]
+    },
+    "militech_soldier": {
+      "name": "Militech Security",
+      "faction": "militech", "level_range": [12, 22],
+      "base_hp": 160, "base_damage": 65, "base_armor": 30,
+      "xp_reward": 180, "eddie_range": [250, 600],
+      "loot_table": [
+        {"item": "ajax", "chance": 0.20},
+        {"item": "militech_assault_armor", "chance": 0.15},
+        {"item": "maxdoc_mk2", "chance": 0.25}
+      ],
+      "skills": ["suppressive_fire", "grenade_toss"],
+      "description": "A Militech corporate security trooper. Well-equipped, well-trained, and very expensive to replace.",
+      "emoji": "🎖️",
+      "dialogue": ["You are in a restricted area.", "Lethal force has been authorized."]
+    },
+    "arasaka_soldier": {
+      "name": "Arasaka Trooper",
+      "faction": "arasaka", "level_range": [18, 30],
+      "base_hp": 200, "base_damage": 90, "base_armor": 40,
+      "xp_reward": 300, "eddie_range": [400, 900],
+      "loot_table": [
+        {"item": "defender", "chance": 0.18},
+        {"item": "arasaka_light_suit", "chance": 0.10},
+        {"item": "arasaka_access_card", "chance": 0.05},
+        {"item": "maxdoc_mk3", "chance": 0.20}
+      ],
+      "skills": ["suppressive_fire", "cyber_scan", "grenade_toss"],
+      "description": "Elite Arasaka corporate soldier. Cyber-enhanced, disciplined, and utterly merciless.",
+      "emoji": "⛩️",
+      "dialogue": ["Arasaka does not negotiate.", "Your interference ends here."]
+    },
+    "arasaka_ninja": {
+      "name": "Arasaka Saburo",
+      "faction": "arasaka", "level_range": [25, 35],
+      "base_hp": 250, "base_damage": 130, "base_armor": 30,
+      "xp_reward": 500, "eddie_range": [700, 1500],
+      "loot_table": [
+        {"item": "satori", "chance": 0.15},
+        {"item": "arasaka_light_suit", "chance": 0.20},
+        {"item": "epic_component", "chance": 0.25}
+      ],
+      "skills": ["swift_slash", "stealth_strike", "cyber_scan"],
+      "description": "An Arasaka cyber-ninja — silent, lethal, invisible until it's too late.",
+      "emoji": "⛩️",
+      "dialogue": ["Honor in service.", "You will not remember this."]
+    },
+    "scavenger": {
+      "name": "Scavenger",
+      "faction": "scavengers", "level_range": [2, 8],
+      "base_hp": 65, "base_damage": 25, "base_armor": 5,
+      "xp_reward": 45, "eddie_range": [30, 100],
+      "loot_table": [
+        {"item": "v10_budget", "chance": 0.20},
+        {"item": "scrap_metal", "chance": 0.60},
+        {"item": "maxdoc_mk1", "chance": 0.35}
+      ],
+      "skills": ["desperate_lunge"],
+      "description": "A desperate bottom-feeder who rips cyberware from still-warm bodies. Dangerous in numbers.",
+      "emoji": "🗡️",
+      "dialogue": ["Give us your chrome!", "Dead men don't need implants."]
+    },
+    "cyberpsycho": {
+      "name": "Cyberpsycho",
+      "faction": "none", "level_range": [15, 30],
+      "base_hp": 350, "base_damage": 110, "base_armor": 25,
+      "xp_reward": 450, "eddie_range": [500, 1200],
+      "loot_table": [
+        {"item": "epic_component", "chance": 0.20},
+        {"item": "optical_fiber", "chance": 0.35},
+        {"item": "maxdoc_mk3", "chance": 0.15}
+      ],
+      "skills": ["berserk_charge", "iron_skin", "rage_strike"],
+      "description": "A former merc or civilian who lost their humanity to too much chrome. A walking nightmare.",
+      "emoji": "🤖",
+      "dialogue": ["KILL. KILL. KILL.", "THEY'RE ALL ENEMIES. EVERYONE IS AN ENEMY.", "I AM THE ONLY REAL THING."]
+    },
+    "maxtac_officer": {
+      "name": "MaxTac Officer",
+      "faction": "ncpd", "level_range": [35, 50],
+      "base_hp": 500, "base_damage": 180, "base_armor": 60,
+      "xp_reward": 1000, "eddie_range": [1500, 3000],
+      "loot_table": [
+        {"item": "legendary_cybertech_jacket", "chance": 0.10},
+        {"item": "defender", "chance": 0.20},
+        {"item": "epic_component", "chance": 0.30}
+      ],
+      "skills": ["suppressive_fire", "steel_shell", "cyber_scan", "grenade_toss"],
+      "description": "A MaxTac anti-cyberpsycho unit. Among the most dangerous humans in Night City. They fight fire with fire.",
+      "emoji": "🚔", "is_boss": true,
+      "dialogue": ["NCPD. Drop your weapons.", "MaxTac doesn't warn twice."]
+    },
+    "rogue_ai_drone": {
+      "name": "Rogue AI Drone",
+      "faction": "none", "level_range": [20, 40],
+      "base_hp": 300, "base_damage": 100, "base_armor": 45,
+      "xp_reward": 400, "eddie_range": [400, 1000],
+      "loot_table": [
+        {"item": "optical_fiber", "chance": 0.50},
+        {"item": "scrap_metal", "chance": 0.70},
+        {"item": "epic_component", "chance": 0.10}
+      ],
+      "skills": ["short_circuit", "suppressive_fire"],
+      "description": "An autonomous combat drone running a corrupted OS. No faction, no mercy, no stopping it without firepower.",
+      "emoji": "🤖",
+      "dialogue": ["[THREAT IDENTIFIED]", "[LETHAL FORCE AUTHORIZED]", "[ERROR: COMPASSION MODULE NOT FOUND]"]
+    }
+  },
+  "enemy_skills": {
+    "berserk_charge": {
+      "name": "Berserk Charge",
+      "description": "Charges the target, dealing 150% damage.",
+      "damage_mult": 1.5, "cooldown_turns": 3, "emoji": "💢"
+    },
+    "steel_shell": {
+      "name": "Steel Shell",
+      "description": "Activates armor plating, reducing damage taken by 40% for 2 turns.",
+      "defense_buff": 0.4, "duration": 2, "cooldown_turns": 4, "emoji": "🛡️"
+    },
+    "frenzy": {
+      "name": "Frenzy",
+      "description": "Attacks twice in one turn.",
+      "multi_attack": 2, "cooldown_turns": 3, "emoji": "🔥"
+    },
+    "swift_slash": {
+      "name": "Swift Slash",
+      "description": "A lightning-fast blade attack. 80% chance to ignore armor.",
+      "damage_mult": 1.2, "armor_pen": 0.8, "cooldown_turns": 2, "emoji": "⚔️"
+    },
+    "short_circuit": {
+      "name": "Short Circuit",
+      "description": "Overloads the target's cyberware, dealing electrical damage and stunning for 1 turn.",
+      "damage": 60, "damage_type": "electrical", "stun_chance": 0.70, "cooldown_turns": 3, "emoji": "⚡"
+    },
+    "contagion": {
+      "name": "Contagion",
+      "description": "Uploads a malware virus. Target takes 20 damage per turn for 3 turns.",
+      "dot_damage": 20, "dot_duration": 3, "cooldown_turns": 4, "emoji": "🦠"
+    },
+    "system_collapse": {
+      "name": "System Collapse",
+      "description": "Catastrophic hack. Deals massive damage and disables one of the player's abilities for 2 turns.",
+      "damage": 120, "damage_type": "electrical", "disable_turns": 2, "cooldown_turns": 6, "emoji": "💀"
+    },
+    "explosive_round": {
+      "name": "Explosive Round",
+      "description": "Fires an explosive round dealing 120% damage and causing burning for 1 turn.",
+      "damage_mult": 1.2, "burn_damage": 15, "cooldown_turns": 3, "emoji": "💥"
+    },
+    "suppressive_fire": {
+      "name": "Suppressive Fire",
+      "description": "Lays down heavy fire. Deals 80% damage but forces the target to dodge or take full damage.",
+      "damage_mult": 0.8, "dodge_penalty": 0.5, "cooldown_turns": 2, "emoji": "🔫"
+    },
+    "grenade_toss": {
+      "name": "Grenade Toss",
+      "description": "Throws a grenade. Deals 100 flat damage, ignoring armor.",
+      "flat_damage": 100, "armor_ignore": true, "cooldown_turns": 4, "emoji": "💣"
+    },
+    "rage_strike": {
+      "name": "Rage Strike",
+      "description": "A massive haymaker dealing 200% damage. Low accuracy.",
+      "damage_mult": 2.0, "accuracy": 0.6, "cooldown_turns": 3, "emoji": "👊"
+    },
+    "iron_skin": {
+      "name": "Iron Skin",
+      "description": "Activates combat stimulants. Heals 50 HP.",
+      "heal": 50, "cooldown_turns": 3, "emoji": "💪"
+    },
+    "desperate_lunge": {
+      "name": "Desperate Lunge",
+      "description": "A reckless attack dealing 120% damage but reducing own armor by 5 for the turn.",
+      "damage_mult": 1.2, "self_armor_reduce": 5, "cooldown_turns": 2, "emoji": "🗡️"
+    },
+    "stealth_strike": {
+      "name": "Stealth Strike",
+      "description": "An unseen attack. Guaranteed crit, deals 250% damage.",
+      "damage_mult": 2.5, "guaranteed_crit": true, "cooldown_turns": 5, "emoji": "🥷"
+    },
+    "cyber_scan": {
+      "name": "Cyber Scan",
+      "description": "Scans and analyzes the target. Reduces target's dodge chance by 30% for 2 turns.",
+      "dodge_debuff": 0.3, "duration": 2, "cooldown_turns": 3, "emoji": "🔍"
+    }
+  }
+}

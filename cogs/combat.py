@@ -20,7 +20,7 @@ from utils.embeds import (
 )
 from utils.helpers import (
     calculate_player_stats, calculate_hit, calculate_flee_chance,
-    roll_loot, pick_random_enemy_for_location, get_item, format_eddies, hp_bar
+    roll_loot, pick_random_enemy_for_location, get_item, format_eddies, hp_bar, get_weapon_skill, get_cyberware
 )
 
 
@@ -147,12 +147,11 @@ class CombatView(discord.ui.View):
 
         # Cyberware passive: subdermal armor reduces damage
         cyberware = await self.bot.db.get_cyberware(str(self.player["user_id"]))
-        cw_armor = sum(
-            cw_item.get("armor", 0)
-            for row in cyberware
-            for cw_item in [__import__("utils.helpers", fromlist=["get_cyberware"]).get_cyberware(row["cyberware_id"])]
-            if cw_item
-        )
+        cw_armor = 0
+        for row in cyberware:
+            cw_item = get_cyberware(row["cyberware_id"])
+            if cw_item:
+                cw_armor += cw_item.get("armor", 0)
         dmg = max(1, dmg - cw_armor // 4)
 
         player_hp = max(0, player_hp - dmg)
@@ -182,7 +181,6 @@ class CombatView(discord.ui.View):
         if weapon_id:
             weapon = get_item(weapon_id)
             if weapon:
-                from utils.helpers import get_weapon_skill
                 skill_name = get_weapon_skill(weapon.get("weapon_type", ""))
                 await self.bot.db.add_skill_xp(str(self.player["user_id"]), skill_name, 25)
 
@@ -243,7 +241,6 @@ class CombatView(discord.ui.View):
         if weapon_id:
             weapon = get_item(weapon_id)
             if weapon:
-                from utils.helpers import get_weapon_skill
                 skill_name = get_weapon_skill(weapon.get("weapon_type", ""))
                 await self.bot.db.add_skill_xp(str(interaction.user.id), skill_name, 8)
 

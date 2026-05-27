@@ -386,9 +386,13 @@ class ExplorationCog(commands.Cog):
             color=config.COLORS["cyan"]
         )
 
-        from utils.helpers import get_enemies_for_location
-        enemies = get_enemies_for_location(player["location"])
-        enemy_names = [e.get("name", "Unknown") for _, e in enemies[:3]] if enemies else []
+        from utils.helpers import get_enemies_for_location, get_enemy
+        enemy_ids = get_enemies_for_location(player["location"])
+        enemy_names = []
+        for eid in enemy_ids[:3]:
+            enemy = get_enemy(eid)
+            if enemy:
+                enemy_names.append(enemy.get("name", "Unknown"))
 
         if scan_quality in ("enhanced", "advanced"):
             embed.add_field(

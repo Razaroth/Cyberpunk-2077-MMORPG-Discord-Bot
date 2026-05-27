@@ -3,6 +3,7 @@ cogs/exploration.py — Travel, explore, map, and random events
 """
 from __future__ import annotations
 
+from typing import Optional
 import random
 
 import discord
@@ -30,6 +31,7 @@ class ChoiceEventView(discord.ui.View):
         self.embed = embed
         self.outcomes = event.get("outcomes", {})
         self.processed = False
+        self.message: Optional[discord.Message] = None
         
         # Create buttons for each outcome
         for choice_key, outcome_data in self.outcomes.items():
@@ -87,7 +89,11 @@ class ChoiceEventView(discord.ui.View):
                     inline=False
                 )
                 self.embed.color = config.COLORS["red"]
-                await interaction.followup.edit_message(interaction.message.id, embed=self.embed)
+                # Edit the original message with the failure embed
+                if self.message:
+                    await self.message.edit(embed=self.embed)
+                else:
+                    await interaction.followup.send(embed=self.embed)
                 return
             
             # Consume the item
@@ -153,7 +159,11 @@ class ChoiceEventView(discord.ui.View):
         for item in self.children:
             item.disabled = True
         
-        await interaction.followup.edit_message(interaction.message.id, embed=self.embed, view=self)
+        # Edit the original message with results
+        if self.message:
+            await self.message.edit(embed=self.embed, view=self)
+        else:
+            await interaction.followup.send(embed=self.embed, view=self)
 
 
 class ExplorationCog(commands.Cog):
@@ -341,7 +351,10 @@ class ExplorationCog(commands.Cog):
             )
             embed.color = config.COLORS["orange"]
             view = ChoiceEventView(self.bot, str(interaction.user.id), event, embed)
-            await interaction.response.send_message(embed=embed, view=view)
+            # Defer and then send the message so we can capture it
+            await interaction.response.defer()
+            message = await interaction.followup.send(embed=embed, view=view)
+            view.message = message
             return
 
         else:

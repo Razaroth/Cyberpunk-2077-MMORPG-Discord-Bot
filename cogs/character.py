@@ -38,7 +38,15 @@ class LifepathSelect(discord.ui.Select):
             return
         self.view.selected_lifepath = self.values[0]
         lp = config.LIFEPATHS[self.values[0]]
-        await interaction.response.send_message(
+        
+        # Defer to avoid "Not Found" errors
+        await interaction.response.defer(thinking=False)
+        
+        # Update the button state
+        self.view.confirm_btn.disabled = False
+        
+        # Send followup message with selection confirmation
+        await interaction.followup.send(
             embed=discord.Embed(
                 title=f"{lp['emoji']} {lp['name']} Selected",
                 description=(
@@ -51,9 +59,6 @@ class LifepathSelect(discord.ui.Select):
             ),
             ephemeral=True
         )
-        self.view.confirm_btn.disabled = False
-        if interaction.message:
-            await interaction.message.edit(view=self.view)
 
 
 class ConfirmCharacterButton(discord.ui.Button):

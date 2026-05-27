@@ -39,17 +39,13 @@ class LifepathSelect(discord.ui.Select):
         self.view.selected_lifepath = self.values[0]
         lp = config.LIFEPATHS[self.values[0]]
         
-        # Defer first to avoid "Unknown Interaction" errors
+        # Defer to acknowledge the interaction
         await interaction.response.defer()
         
-        # Update the button state
+        # Update the button state internally
         self.view.confirm_btn.disabled = False
         
-        # Edit the original message to enable the confirm button
-        if interaction.message:
-            await interaction.message.edit(view=self.view)
-        
-        # Send followup with selection details
+        # Send confirmation message
         await interaction.followup.send(
             embed=discord.Embed(
                 title=f"{lp['emoji']} {lp['name']} Selected",
@@ -57,10 +53,11 @@ class LifepathSelect(discord.ui.Select):
                     f"{lp['description']}\n\n"
                     f"**Bonus:** {lp['starting_bonus']}\n"
                     f"**Starting Eddies:** {lp['starting_eddies']:,} €$\n\n"
-                    f"Click **Confirm** above to begin your life in Night City."
+                    f"Click **Confirm** below to begin your life in Night City."
                 ),
                 color=config.COLORS["yellow"]
             ),
+            view=self.view,
             ephemeral=True
         )
 

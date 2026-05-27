@@ -258,7 +258,9 @@ class CharacterCog(commands.Cog):
             return
 
         equipped = await self.db.get_equipped_items(str(target.id))
-        faction_rep = await self.db.get_faction_rep(str(target.id))
+        faction_rep_list = await self.db.get_faction_rep(str(target.id))
+        # Convert list of dicts to dict for profile_embed
+        faction_rep = {row["faction_id"]: row["reputation"] for row in faction_rep_list}
         # discord.Member is a subclass of discord.User, so it's compatible
         embed = profile_embed(player, target, equipped, faction_rep)  # type: ignore
         await interaction.response.send_message(embed=embed)

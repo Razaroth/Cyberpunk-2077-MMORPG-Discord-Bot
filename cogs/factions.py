@@ -31,7 +31,9 @@ class FactionsCog(commands.Cog):
             return
 
         faction_rep = await self.db.get_faction_rep(str(interaction.user.id))
-        embed = factions_embed(player, faction_rep)
+        # Convert list to dict for factions_embed
+        faction_rep_dict = {row["faction_id"]: row["reputation"] for row in faction_rep}
+        embed = factions_embed(player, faction_rep_dict)
         await interaction.response.send_message(embed=embed)
 
     # ── /streetcred ───────────────────────────────────────────

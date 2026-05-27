@@ -39,30 +39,30 @@ class LifepathSelect(discord.ui.Select):
         self.view.selected_lifepath = self.values[0]
         lp = config.LIFEPATHS[self.values[0]]
         
+        # Defer first to avoid "Unknown Interaction" errors
+        await interaction.response.defer()
+        
         # Update the button state
         self.view.confirm_btn.disabled = False
         
-        # Respond with ephemeral confirmation message
-        await interaction.response.send_message(
+        # Edit the original message to enable the confirm button
+        if interaction.message:
+            await interaction.message.edit(view=self.view)
+        
+        # Send followup with selection details
+        await interaction.followup.send(
             embed=discord.Embed(
                 title=f"{lp['emoji']} {lp['name']} Selected",
                 description=(
                     f"{lp['description']}\n\n"
                     f"**Bonus:** {lp['starting_bonus']}\n"
                     f"**Starting Eddies:** {lp['starting_eddies']:,} €$\n\n"
-                    f"Click **Confirm** below to begin your life in Night City."
+                    f"Click **Confirm** above to begin your life in Night City."
                 ),
                 color=config.COLORS["yellow"]
             ),
             ephemeral=True
         )
-        
-        # Edit the original message to show the now-enabled confirm button
-        try:
-            if interaction.message:
-                await interaction.message.edit(view=self.view)
-        except (discord.NotFound, AttributeError):
-            pass  # Message may have been deleted, that's okay
 
 
 class ConfirmCharacterButton(discord.ui.Button):
